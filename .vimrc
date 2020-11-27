@@ -1,32 +1,18 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'tpope/vim-sensible'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'yggdroot/indentline'
-Plugin 'morhetz/gruvbox'
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+syntax on
+set ruler
+set showcmd
+set wildmenu
 
 set number
 set relativenumber
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
 set expandtab
-set smartindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=-1
 
-set wildmenu
-syntax on
+set autoindent
 
-set colorcolumn=80
+inoremap <S-Tab> <C-V><Tab>
 
-set background=dark
-colorscheme gruvbox
+colorscheme distinguished
