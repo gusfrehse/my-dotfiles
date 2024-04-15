@@ -1,18 +1,17 @@
-syntax on
-set ruler
-set showcmd
-set wildmenu
 
-set number
-set relativenumber
+set mouse=a
 
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=-1
+set termguicolors
+set et ts=4 sts=4 sw=4
+"colorscheme happy_hacking
+"colorscheme paramount
+colorscheme mountaineer
+"colorscheme twilight256
+"colorscheme seoul256
+"colorscheme sunbather
 
-set autoindent
+set background=dark
 
-inoremap <S-Tab> <C-V><Tab>
+set hidden
 
-colorscheme distinguished
+set path+=/usr/include/x86_64-linux-gnu/
