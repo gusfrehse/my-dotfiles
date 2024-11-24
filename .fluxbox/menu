@@ -1,0 +1,37 @@
+[begin] (FluxBox)
+    [exec] (chromium) {chromium}
+    [exec] (alacritty) {alacritty}
+    [exec] (zed) {zeditor}
+    [exec] (vscode) {code}
+    [exec] (files) {thunar}
+    [exec] (camera) {snapshot}
+    [exec] (spotify) {spotify}
+    [submenu] (System)
+        [submenu] (Settings)
+            [submenu] (GNOME)
+                [exec] (GDM Settings) {gdm-settings}
+                [exec] (Settings) {gnome-control-center}
+            [end]
+            [exec] (Rygel Preferences) {rygel-preferences}
+        [end]
+        [exec] (Color Profile Viewer) {gcm-viewer}
+        [exec] (Disk Usage Analyzer) {baobab}
+        [exec] (GNOME System Monitor) {gnome-system-monitor}
+        [exec] (Htop) {xterm -e htop}
+        [exec] (Logs) {gnome-logs}
+        [exec] (Parental Controls) {malcontent-control}
+        [exec] (Software) {gnome-software}
+    [end]
+    [separator]
+    [submenu] (FluxBox)
+        [workspaces] (Workspaces)
+        [submenu] (Styles)
+            [stylesdir] (/usr/share/fluxbox/styles)
+        [end]
+        [config] (Configure)
+        [reconfig] (Reconfig)
+        [restart] (Restart)
+        [separator]
+        [exit] (Exit)
+    [end]
+[end]
